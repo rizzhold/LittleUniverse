@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Music &amp; internet">
+  <rect x="3" y="3" width="94" height="94" rx="25" fill="#FFFFFF" fill-opacity=".28"/>
+  <g fill="none" stroke="#202743" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M58 17v46a13 13 0 1 1-8-12V29l29-7v33a13 13 0 1 1-8-12V15l-13 2Z"/><circle cx="25" cy="28" r="4"/><circle cx="28" cy="70" r="3"/><path d="M14 48c5-5 10-5 15 0m-15 8c5-5 10-5 15 0"/></g>
+  <circle cx="82" cy="17" r="3" fill="#D97757" stroke="none"/>
+</svg>

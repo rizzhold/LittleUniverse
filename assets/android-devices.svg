@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Android &amp; devices">
+  <rect x="3" y="3" width="94" height="94" rx="25" fill="#FFFFFF" fill-opacity=".28"/>
+  <g fill="none" stroke="#27345F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="12" width="48" height="76" rx="9"/><path d="M39 21h22M45 78h10"/><path d="m36 9-5-6m33 6 5-6M36 37v-4a14 14 0 0 1 28 0v4H36Z"/><path d="M40 29h.5m19-.5h.5"/></g>
+  <circle cx="82" cy="17" r="3" fill="#D97757" stroke="none"/>
+</svg>
