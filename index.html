@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111216">
+  <meta name="description" content="Little Universe — personal space of rizzhold, an Indonesian SMK RPL student.">
+  <title>rizzhold — Little Universe</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/responsive.js"></script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <noscript><p style="padding:1rem;text-align:center;font-family:system-ui">Aktifkan JavaScript untuk melihat seluruh konten Little Universe.</p></noscript>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#home" aria-label="Back to home"><span class="wordmark-star">✳</span> little<span>universe</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#passions">Passions</a><a href="#music">Music</a><a href="#play">Play</a><a href="#connect">Connect</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme"><span class="theme-icon">◐</span><span class="theme-label">Theme</span></button>
+    </header>
+
+    <main id="home">
+      <section class="hero section-grid" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span><span id="status-text">currently around</span></p>
+          <h1 id="hero-title">A little corner<br>of <span class="gradient-text">my universe.</span></h1>
+          <p class="hero-description" id="hero-description">A personal space for things I love, things I make, and little things worth exploring.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#passions">Explore my world <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#about">A bit about me <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta"><span class="meta-mark">✳</span><span id="hero-note">Made of curiosity & late-night ideas.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Decorative profile artwork">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-label art-label-top">PERSONAL WEB<br>VOL. 001</div>
+          <div class="avatar-frame"><img id="avatar" src="assets/avatar-cat.jpg" alt="Foto profil kucing putih dengan kaleng hijau"></div>
+          <div class="sticker sticker-star" aria-hidden="true">✳</div>
+          <div class="sticker sticker-smile" aria-hidden="true">☺</div>
+          <div class="art-label art-label-bottom"><span class="tiny-dot"></span> YOUR SPACE, YOUR RULES</div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Interests ticker"><div class="ticker-track" id="ticker-track"></div></section>
+
+      <section class="content-section" id="about">
+        <div class="section-heading"><p class="eyebrow">01 / THE PERSON</p><h2>A little <span class="serif-italic">about me.</span></h2></div>
+        <div class="about-layout">
+          <div class="about-card surface-card">
+            <span class="card-index">HELLO, INTERNET!</span>
+            <h3 id="about-title">Curious by default.</h3>
+            <p id="about-copy">I like discovering how things work, building little projects, and collecting inspiration from all over the place.</p>
+            <div class="about-tags" id="about-tags"></div>
+          </div>
+          <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p id="quote-text">Make room for things that make you feel alive.</p>
+            <span class="quote-credit" id="quote-credit">A note to self</span>
+            <span class="quote-spark" aria-hidden="true">✳</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="passions">
+        <div class="section-heading section-heading-row"><div><p class="eyebrow">02 / THINGS I LOVE</p><h2>Current <span class="serif-italic">passions.</span></h2></div><p class="section-aside">A few things that keep<br>my brain happily busy.</p></div>
+        <div class="passion-grid" id="passion-grid"></div>
+      </section>
+
+      <section class="content-section" id="music">
+        <div class="section-heading section-heading-row"><div><p class="eyebrow">03 / SOUNDTRACK</p><h2>On <span class="serif-italic">repeat.</span></h2></div><p class="section-aside">A track I keep close.<br>Open it directly.</p></div>
+        <div class="music-layout">
+          <div class="music-card surface-card">
+            <div class="album-art" id="album-art"><span class="album-sun">✳</span><span class="album-caption">SIDE A<br>FAVOURITES</span></div>
+            <div class="music-info"><p class="eyebrow">CURRENTLY LISTENING TO</p><h3 id="track-title">Choose your soundtrack</h3><p id="track-artist">Your favourite artist</p>
+              <div class="music-controls"><button class="button button-lime" id="music-play" type="button"><span id="music-play-icon">↗</span> <span id="music-play-label">Open in YouTube Music</span></button><span class="music-hint" id="music-hint">Opens in a new tab</span></div>
+            </div>
+          </div>
+          <a class="youtube-wrap music-direct-link" id="youtube-wrap" href="https://music.youtube.com/watch?v=WjHJGmQYKYo&amp;si=OoblHDiX877h9SWj" target="_blank" rel="noopener noreferrer" aria-label="Open Kasih Arahan in YouTube Music"><div class="youtube-placeholder"><span class="youtube-symbol">↗</span><p>Kasih Arahan</p><small>Open directly in YouTube Music</small></div></a>
+        </div>
+      </section>
+
+      <section class="content-section" id="play">
+        <div class="section-heading section-heading-row"><div><p class="eyebrow">04 / TAKE A BREAK</p><h2>Little <span class="serif-italic">playground.</span></h2></div><p class="section-aside">No downloads. Just play.</p></div>
+        <div class="game-tabs" role="tablist" aria-label="Choose a mini game">
+          <button class="game-tab is-active" id="tab-snake" type="button" role="tab" aria-selected="true" aria-controls="game-snake" data-game-tab="snake"><span>01</span> Snake</button>
+          <button class="game-tab" id="tab-ttt" type="button" role="tab" aria-selected="false" aria-controls="game-ttt" data-game-tab="ttt"><span>02</span> Tic-Tac-Toe</button>
+        </div>
+        <div class="game-panel is-active" id="game-snake" role="tabpanel" aria-labelledby="tab-snake" data-game-panel="snake">
+          <div class="game-intro"><div><p class="eyebrow">CLASSIC ARCADE</p><h3>One more round?</h3><p>Eat the dots. Don't bump into yourself.</p></div><div class="score-box"><span>BEST SCORE</span><strong id="snake-best">0</strong></div></div>
+          <div class="snake-layout"><div class="snake-board-wrap"><canvas id="snake-canvas" width="400" height="400" aria-label="Snake game board"></canvas><div class="game-overlay" id="snake-overlay"><strong id="snake-overlay-title">Ready when you are.</strong><span id="snake-overlay-copy">Use arrow keys or WASD.</span><button class="button button-lime" id="snake-start" type="button">Start game</button></div></div>
+            <div class="game-side"><div class="live-score"><span>YOUR SCORE</span><strong id="snake-score">0</strong></div><p class="game-help">Desktop: arrow keys / WASD<br>Mobile: use the direction pad.</p><div class="dpad" aria-label="Snake direction controls"><button data-dir="up" aria-label="Move up">↑</button><button data-dir="left" aria-label="Move left">←</button><button data-dir="down" aria-label="Move down">↓</button><button data-dir="right" aria-label="Move right">→</button></div><button class="button button-outline" id="snake-restart" type="button">Restart</button></div>
+          </div>
+        </div>
+        <div class="game-panel" id="game-ttt" role="tabpanel" aria-labelledby="tab-ttt" data-game-panel="ttt" hidden>
+          <div class="game-intro"><div><p class="eyebrow">TINY STRATEGY</p><h3>Crosses & circles.</h3><p>Play against a simple computer opponent.</p></div><div class="score-box"><span>MODE</span><strong>1 vs AI</strong></div></div>
+          <div class="ttt-layout"><div class="ttt-board" id="ttt-board" role="group" aria-label="Tic-Tac-Toe board"></div><div class="game-side ttt-side"><div class="live-score"><span>GAME STATUS</span><strong class="ttt-status" id="ttt-status">Your turn ✳</strong></div><p class="game-help">You're <b>X</b>. The computer is <b>O</b>.</p><button class="button button-lime" id="ttt-restart" type="button">New round ↻</button><div class="ttt-record"><span>YOU <b id="ttt-wins">0</b></span><span>AI <b id="ttt-losses">0</b></span><span>DRAWS <b id="ttt-draws">0</b></span></div></div></div>
+        </div>
+      </section>
+
+      <section class="content-section connect-section" id="connect">
+        <div class="connect-card"><div><p class="eyebrow">05 / ELSEWHERE</p><h2>Find me <span class="serif-italic">out there.</span></h2><p>Little links to other corners of my internet.</p></div><div class="social-links" id="social-links"></div></div>
+      </section>
+    </main>
+
+    <footer class="footer"><a class="wordmark" href="#home"><span class="wordmark-star">✳</span> little<span>universe</span></a><p>Built with curiosity, caffeine & a little bit of CSS.</p><div class="footer-links"><a href="#home" class="back-top">Back to top ↑</a><a href="#" id="public-stats-link" class="back-top" target="_blank" rel="noopener noreferrer" hidden>Website statistics ↗</a></div></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
